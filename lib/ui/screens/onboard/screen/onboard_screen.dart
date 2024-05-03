@@ -5,7 +5,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../data/constants/constants.dart';
 import '../../../../data/models/onboard/onboard_model.dart';
-import '../../../../serivce_locator.dart';
+import '../../../../services/service_locator/serivce_locator.dart';
 import '../../../../services/theme/app_colors.dart';
 import '../../auth/login/screen/login_screen.dart';
 

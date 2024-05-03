@@ -8,7 +8,7 @@ import 'package:new_version_plus/new_version_plus.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../serivce_locator.dart';
+import '../service_locator/serivce_locator.dart';
 import '../alerts/app_alerts.dart';
 import '../log/app_log.dart';
 import '../../data/constants/constants.dart';

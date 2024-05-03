@@ -1,7 +1,7 @@
 import 'package:provider/provider.dart';
 
 import 'auth/auth_provider.dart';
-import '../serivce_locator.dart';
+import '../services/service_locator/serivce_locator.dart';
 import 'bmi/bmi_provider.dart';
 
 class AppProviders {

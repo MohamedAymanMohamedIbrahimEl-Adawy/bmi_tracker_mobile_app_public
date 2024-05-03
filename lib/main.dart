@@ -11,7 +11,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'data/constants/constants.dart';
 import 'providers/app_providers.dart';
 import 'providers/auth/auth_provider.dart';
-import 'serivce_locator.dart';
+import 'services/service_locator/serivce_locator.dart';
 import 'services/localization/app_localization.dart';
 import 'services/notifications/notifications_services.dart';
 import 'services/routes/app_rotues.dart';
