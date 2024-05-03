@@ -1,0 +1,15 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.genix.petberry",
+            "sha256_cert_fingerprints": [
+                "DC:6C:15:8A:1A:00:43:C7:6E:4F:6F:30:AD:3E:D9:9A:0C:A3:EE:E6:A8:CB:D2:31:29:40:D7:4C:5B:FF:58:17",
+                "F3:C9:9D:A7:C9:00:96:40:09:B4:94:89:87:85:C0:82:48:46:CB:BA:6B:2C:32:E4:16:F1:FA:DD:13:5A:43:2E"
+            ]
+        }
+    }
+]
