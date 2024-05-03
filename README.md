@@ -1,6 +1,6 @@
-# Bmi Tracker App with Flutter
+# Bmi Tracker App with Flutter and Dart
 
-A simple Delivery app built using Flutter that helps you manage your tasks efficiently.
+A simple Bmi Tracker app built using Flutter that helps you track your weight efficiently.
 
 ## Screens
 
@@ -41,7 +41,7 @@ Follow these instructions to get the project up and running on your local machin
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/MohamedAymanMohamedIbrahimEl-Adawy/bmi_tracker_app_public.git
+   git clone https://github.com/MohamedAymanMohamedIbrahimEl-Adawy/bmi_tracker_mobile_app_public.git
    ```
 
 2. Navigate to the project directory:
