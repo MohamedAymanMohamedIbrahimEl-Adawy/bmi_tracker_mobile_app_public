@@ -12,13 +12,14 @@ import '../../ui/screens/tabs/main_tab/screen/tabs_screen.dart';
 class AuthProvider with ChangeNotifier {
   final AuthRepository _authRepository;
 
-  AuthProvider({required AuthRepository authRepository})
-      : _authRepository = authRepository;
+  AuthProvider({
+    required AuthRepository authRepository,
+  }) : _authRepository = authRepository;
+
   bool _isLoading = false;
+  bool get getLoadingStatus => _isLoading;
+
   Future<void> login(LoginRequestModel loginRequestModel) async {
-    if (_isLoading) {
-      return;
-    }
     late final AppResponse appResponse;
     _isLoading = true;
 
@@ -37,7 +38,7 @@ class AuthProvider with ChangeNotifier {
         body: 'Logged in successfully'.tr(),
       );
       await _authRepository.setLoginStatus(true);
-      await _authRepository.setUserId(appResponse.data?['id']);
+      await _authRepository.setUserId(appResponse.data['id']);
       Future.delayed(const Duration(seconds: 2)).then((value) =>
           Navigator.of(Get.context!)
               .pushReplacementNamed(TabsScreen.routeName));

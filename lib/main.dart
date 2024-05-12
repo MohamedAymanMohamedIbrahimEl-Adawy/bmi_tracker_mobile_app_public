@@ -45,10 +45,9 @@ void main() async {
   // Handle firebase background notifications
   FirebaseMessaging.onBackgroundMessage(backgroundMessageHandler);
 
-  // Enable firebase analytics
-  await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
-
-  if (!kDebugMode) {
+  if (kReleaseMode) {
+    // Enable firebase analytics
+    await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
     const fatalError = true;
     // Non-async exceptions
     FlutterError.onError = (errorDetails) {

@@ -31,14 +31,14 @@ Future<void> initServices() async {
       .registerLazySingleton<SQLErrorHandler>(() => SQLErrorHandler());
 
   // Registering Repos
-  serviceLocator.registerLazySingleton<AuthRepository>(
+  serviceLocator.registerLazySingleton<FirebaseAuthRepo>(
     () => FirebaseAuthRepo(
       firebaseAuth: FirebaseAuth.instance,
       errorHandler: serviceLocator<FirebaseErrorHandler>(),
       sharedPreferences: serviceLocator<SharedPreferences>(),
     ),
   );
-  serviceLocator.registerLazySingleton<AuthRepository>(
+  serviceLocator.registerLazySingleton<SqlAuthRepo>(
     () => SqlAuthRepo(
       database: database,
       errorHandler: serviceLocator<SQLErrorHandler>(),

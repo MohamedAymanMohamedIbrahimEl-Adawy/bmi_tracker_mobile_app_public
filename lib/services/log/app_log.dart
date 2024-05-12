@@ -6,14 +6,21 @@ class AppLog {
   static void logValue(dynamic value) {
     if (kDebugMode) {
       log('----------------  Log  ------------------');
-      print('Value : $value');
+      log('Value : $value');
     }
   }
 
   static void logValueAndTitle(String title, dynamic value) {
     if (kDebugMode) {
       log('----------------  Log  ------------------');
-      print('Title :  $title');
+      log('Title :  $title');
+      log('Value : $value');
+    }
+  }
+
+  static void debugPrint(dynamic value) {
+    if (kDebugMode) {
+      print('----------------  AppLog - Debug print  ------------------');
       print('Value : $value');
     }
   }

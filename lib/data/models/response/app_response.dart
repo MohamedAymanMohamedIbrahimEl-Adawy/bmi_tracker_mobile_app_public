@@ -1,5 +1,5 @@
 class AppResponse {
-  Map<String, dynamic>? data;
+  dynamic data;
   final bool hasError;
   String? message;
 
@@ -10,7 +10,7 @@ class AppResponse {
   });
 
   factory AppResponse.withSuccess({
-    Map<String, dynamic>? data,
+    dynamic data,
     String? message,
   }) {
     return AppResponse(
@@ -21,7 +21,7 @@ class AppResponse {
   }
 
   factory AppResponse.withError({
-    Map<String, dynamic>? data,
+    dynamic data,
     String? message,
   }) {
     return AppResponse(

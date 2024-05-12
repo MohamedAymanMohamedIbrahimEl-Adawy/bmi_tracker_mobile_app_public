@@ -27,11 +27,10 @@ class BmiProvider with ChangeNotifier {
       AppSnacks.showTopSnackBar(
         context: Get.context!,
         title: 'alert'.tr(),
-        body: appResponse.message ?? 'anErrorOccurred'.tr(),
+        body: appResponse.message!,
         seconds: 2,
       );
     } else {
-      //
       _allRecords.insert(0, bmiModel);
       AppSnacks.showTopSnackBar(
         context: Get.context!,
@@ -49,7 +48,7 @@ class BmiProvider with ChangeNotifier {
       AppSnacks.showTopSnackBar(
         context: Get.context!,
         title: 'alert'.tr(),
-        body: appResponse.message ?? 'anErrorOccurred'.tr(),
+        body: appResponse.message!,
         seconds: 2,
       );
     } else {
@@ -77,7 +76,7 @@ class BmiProvider with ChangeNotifier {
       AppSnacks.showTopSnackBar(
         context: Get.context!,
         title: 'alert'.tr(),
-        body: appResponse.message ?? 'anErrorOccurred'.tr(),
+        body: appResponse.message!,
         seconds: 2,
       );
     } else {
@@ -105,7 +104,7 @@ class BmiProvider with ChangeNotifier {
       AppSnacks.showTopSnackBar(
         context: Get.context!,
         title: 'alert'.tr(),
-        body: appResponse.message ?? 'anErrorOccurred'.tr(),
+        body: appResponse.message!,
         seconds: 2,
       );
     } else {
@@ -136,7 +135,7 @@ class BmiProvider with ChangeNotifier {
       AppSnacks.showTopSnackBar(
         context: Get.context!,
         title: 'alert'.tr(),
-        body: appResponse.message ?? 'anErrorOccurred'.tr(),
+        body: appResponse.message!,
         seconds: 2,
       );
     } else {

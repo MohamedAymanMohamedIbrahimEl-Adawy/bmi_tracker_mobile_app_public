@@ -42,8 +42,6 @@ class FirebaseBmiRepo extends BmiRepository {
 
       AppLog.logValueAndTitle('Document Id', bmiModel.id);
 
-      // response.get().then((value) => print(value.data()))
-
       return AppResponse.withSuccess(
         data: bmiModel.toMap(),
       );

@@ -330,7 +330,8 @@ class _UpdateFormState extends State<UpdateForm> {
               backgroundColor: Theme.of(context).colorScheme.primary,
               textStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: Theme.of(context).colorScheme.background,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
                   ),
             ),
           ],
